@@ -1,7 +1,7 @@
 <img src="https://visitor-badge.laobi.icu/badge?page_id=KeivanBolouri.KeivanBolouri"/>
 
 <h1 align="center">
-  Hi There!! 
+  Hi There!
   <img
     src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif"
     width="40"
