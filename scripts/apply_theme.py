@@ -11,6 +11,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 
+# Profile READMEs require absolute image URLs (relative paths = "Invalid image source")
+ASSET_BASE = "https://raw.githubusercontent.com/KeivanBolouri/KeivanBolouri/main/assets"
+
 THEME_RE = re.compile(
     r"<!--THEME_START-->.*?<!--THEME_END-->",
     re.DOTALL,
@@ -27,8 +30,7 @@ TYPING_LINES = (
 
 
 def theme_block(dark: bool) -> str:
-    banner = "assets/banner-dark.svg" if dark else "assets/banner-light.svg"
-    # demolab typing SVG: hex colors without '#'
+    banner = f"{ASSET_BASE}/banner-{'dark' if dark else 'light'}.png"
     if dark:
         color = "58A6FF"
         background = "0D1117"

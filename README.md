@@ -3,7 +3,7 @@
 <!--THEME_START-->
 <!-- theme: light -->
 <p align="center">
-  <img src="assets/banner-light.svg" width="100%" alt="profile theme banner (light)" />
+  <img src="https://raw.githubusercontent.com/KeivanBolouri/KeivanBolouri/main/assets/banner-light.png" width="100%" alt="profile theme banner (light)" />
 </p>
 
 <h1 align="center">
