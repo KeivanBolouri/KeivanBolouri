@@ -1,8 +1,3 @@
-<!-- auto-theme: light · UTC day 12 · odd=dark even=light · every 24h -->
-<table width="100%" cellpadding="18" cellspacing="0" border="0" bgcolor="#FFFFFF">
-<tr>
-<td bgcolor="#FFFFFF">
-
 <img src="https://visitor-badge.laobi.icu/badge?page_id=KeivanBolouri.KeivanBolouri"/>
 
 <h1 align="center">
@@ -16,7 +11,7 @@
 
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Righteous&amp;size=32&amp;center=true&amp;vCenter=true&amp;width=900&amp;height=80&amp;duration=3000&amp;pause=1000&amp;color=0B3D91&amp;background=FFFFFF&amp;lines=I'm+Keivan+Bolouri;I+am+interested+in;Causal+Machine+Learning;Causal+Inference;Optimization+in+Statistics;Statistical+Computing"
+    src="https://readme-typing-svg.demolab.com?font=Righteous&amp;size=32&amp;center=true&amp;vCenter=true&amp;width=900&amp;height=80&amp;duration=3000&amp;pause=1000&amp;color=58A6FF&amp;lines=I'm+Keivan+Bolouri;I+am+interested+in;Causal+Machine+Learning;Causal+Inference;Optimization+in+Statistics;Statistical+Computing"
     alt="Typing SVG"
   />
 </p>
@@ -108,7 +103,3 @@
   </a>
 
 </div>
-
-</td>
-</tr>
-</table>
