@@ -1,5 +1,11 @@
 <img src="https://visitor-badge.laobi.icu/badge?page_id=KeivanBolouri.KeivanBolouri"/>
 
+<!--THEME_START-->
+<!-- theme: light -->
+<p align="center">
+  <img src="assets/banner-light.svg" width="100%" alt="profile theme banner (light)" />
+</p>
+
 <h1 align="center">
   Hi There!
   <img
@@ -11,10 +17,11 @@
 
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Righteous&amp;size=32&amp;center=true&amp;vCenter=true&amp;width=900&amp;height=80&amp;duration=3000&amp;pause=1000&amp;color=58A6FF&amp;lines=I'm+Keivan+Bolouri;I+am+interested+in;Causal+Machine+Learning;Causal+Inference;Optimization+in+Statistics;Statistical+Computing"
+    src="https://readme-typing-svg.demolab.com?font=Righteous&amp;size=32&amp;center=true&amp;vCenter=true&amp;width=900&amp;height=80&amp;duration=3000&amp;pause=1000&amp;color=0B3D91&amp;background=FFFFFF&amp;lines=I'm+Keivan+Bolouri;I+am+interested+in;Causal+Machine+Learning;Causal+Inference;Optimization+in+Statistics;Statistical+Computing"
     alt="Typing SVG"
   />
 </p>
+<!--THEME_END-->
 
 <h3>🌱 Current Focus</h3>
 
