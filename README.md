@@ -1,4 +1,4 @@
-<img src="https://komarev.com/ghpvc/?username=KeivanBolouri&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views"/>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=KeivanBolouri.KeivanBolouri" alt="visitors"/>
 
 <h1 align="center">
   Hi There!
@@ -16,7 +16,7 @@
   />
 </p>
 
-<h3>ðŸŒ± Current Focus</h3>
+<h3>Ã°Å¸Å’Â± Current Focus</h3>
 
 <p>
   Advanced training in
@@ -27,7 +27,7 @@
   and reproducible computational research workflows.
 </p>
 
-<h3>ðŸ‘¯ Collaboration</h3>
+<h3>Ã°Å¸â€˜Â¯ Collaboration</h3>
 
 <p>
   Open to collaborations in
@@ -36,7 +36,7 @@
   and data-driven decision making for real-world applications.
 </p>
 
-<h3>ðŸ’¬ Methodological Expertise</h3>
+<h3>Ã°Å¸â€™Â¬ Methodological Expertise</h3>
 
 <p>
   <code>Linear and generalized linear modeling</code>,
@@ -51,7 +51,7 @@
 
 <hr/>
 
-<h2 align="center">âš’ï¸ Languages, Frameworks, and Tools âš’ï¸</h2>
+<h2 align="center">Ã¢Å¡â€™Ã¯Â¸Â Languages, Frameworks, and Tools Ã¢Å¡â€™Ã¯Â¸Â</h2>
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=r,python,cpp,cs,vscode,latex,git,github,java,html,anaconda,pycharm" alt="Languages and tools" />
@@ -60,7 +60,7 @@
 <hr/>
 
 <div align="center">
-  <h2>ðŸ My Contributions ðŸ</h2>
+  <h2>Ã°Å¸ÂÂ My Contributions Ã°Å¸ÂÂ</h2>
   <br/>
   <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />
   <br/><br/><br/>
@@ -68,7 +68,7 @@
 
 <hr/>
 
-<h2>ðŸ¤ Letâ€™s Connect</h2>
+<h2>Ã°Å¸Â¤Â LetÃ¢â‚¬â„¢s Connect</h2>
 
 <div style="display:flex; flex-wrap:wrap; justify-content:flex-start; gap:12px;">
 
