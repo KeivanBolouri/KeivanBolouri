@@ -1,4 +1,4 @@
-<img src="https://images.weserv.nl/?url=https%3A%2F%2Fvisitor-badge.laobi.icu%2Fbadge%3Fpage_id%3DKeivanBolouri.KeivanBolouri&output=png&n=-1" alt="visitors: 672"/>
+<img src="https://hits.sh/github.com/KeivanBolouri/KeivanBolouri.svg?label=Visitors&color=0e75b6&labelColor=555555&extraCount=667" alt="Visitors" />
 <h1 align="center">
   Hi There!
   <img
@@ -15,7 +15,7 @@
   />
 </p>
 
-<h3>🌱 Current Focus</h3>
+<h3>ðŸŒ± Current Focus</h3>
 
 <p>
   Advanced training in
@@ -26,7 +26,7 @@
   and reproducible computational research workflows.
 </p>
 
-<h3>👯 Collaboration</h3>
+<h3>ðŸ‘¯ Collaboration</h3>
 
 <p>
   Open to collaborations in
@@ -35,7 +35,7 @@
   and data-driven decision making for real-world applications.
 </p>
 
-<h3>💬 Methodological Expertise</h3>
+<h3>ðŸ’¬ Methodological Expertise</h3>
 
 <p>
   <code>Linear and generalized linear modeling</code>,
@@ -50,7 +50,7 @@
 
 <hr/>
 
-<h2 align="center">⚒️ Languages, Frameworks, and Tools ⚒️</h2>
+<h2 align="center">âš’ï¸ Languages, Frameworks, and Tools âš’ï¸</h2>
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=r,python,cpp,cs,vscode,latex,git,github,java,html,anaconda,pycharm" alt="Languages and tools" />
@@ -59,7 +59,7 @@
 <hr/>
 
 <div align="center">
-  <h2>🐍 My Contributions 🐍</h2>
+  <h2>ðŸ My Contributions ðŸ</h2>
   <br/>
   <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />
   <br/><br/><br/>
@@ -67,7 +67,7 @@
 
 <hr/>
 
-<h2>🤝 Let’s Connect</h2>
+<h2>ðŸ¤ Letâ€™s Connect</h2>
 
 <div style="display:flex; flex-wrap:wrap; justify-content:flex-start; gap:12px;">
 
