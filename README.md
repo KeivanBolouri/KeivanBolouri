@@ -60,10 +60,10 @@
 <div align="center">
   <h2>🐍 Contribution Animation 🐍</h2>
   <br/>
-  <img alt="Example contribution-grid animation by salesp07" src="https://raw.githubusercontent.com/salesp07/salesp07/output/github-contribution-grid-snake.svg" />
+  <img alt="Example contribution-grid animation by Platane" src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" />
   <p>
     <small>
-      Example animation from <a href="https://github.com/salesp07">salesp07</a>
+      Example animation from <a href="https://github.com/Platane/snk">Platane/snk</a>
       · <a href="https://github.com/KeivanBolouri">View my contributions</a>
     </small>
   </p>
