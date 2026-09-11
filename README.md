@@ -29,7 +29,7 @@
 <p>
   Open to collaborations in
   <code>causal inference</code>,
-  <code>missing-data methods</code>,
+  <code>statistical simulations and computational methods</code>,
   <code>statistical machine learning</code>,
   and data-driven decision making for real-world applications.
 </p>
