@@ -87,6 +87,14 @@
   />
   <p><small>Repeated samples produce different intervals. The display tracks how often they contain the fixed population mean.</small></p>
 
+  <h3>🎲 Monte Carlo Integration</h3>
+  <img
+    src="./assets/monte-carlo-integration.gif"
+    width="800"
+    alt="Uniform random points in a three-by-two rectangle estimate the integral of a wavy, exponentially decaying curve; the running estimate is compared with a numerical reference."
+  />
+  <p><small>Random points estimate the area under e<sup>−x²</sup>[1 + sin²(5x)] on [0, 3]. The estimate is six times the fraction below the curve, compared with a numerical reference.</small></p>
+
   <h3>🌐 How Federated Learning Works</h3>
   <img
     src="./assets/federated-learning.gif"
