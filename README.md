@@ -8,6 +8,15 @@
   />
 </h1>
 
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Righteous&amp;size=32&amp;center=true&amp;vCenter=true&amp;width=900&amp;height=80&amp;duration=3000&amp;pause=1000&amp;color=58A6FF&amp;lines=I'm+Keivan+Bolouri;I+am+interested+in;Causal+Inference;Missing+Data;Machine+Learning;Interpretable+Models;Statistical+Simulation+and+Computing"
+    alt="Typing SVG: Keivan Bolouri's research interests"
+  />
+</p>
+
+<hr/>
+
 <div align="center">
   <h2>📊 A Little Statistical Curiosity</h2>
   <p>What changes when some observations go missing?</p>
@@ -25,13 +34,6 @@
 </div>
 
 <hr/>
-
-<p align="center">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Righteous&amp;size=32&amp;center=true&amp;vCenter=true&amp;width=900&amp;height=80&amp;duration=3000&amp;pause=1000&amp;color=58A6FF&amp;lines=I'm+Keivan+Bolouri;I+am+interested+in;Causal+Inference;Missing+Data;Machine+Learning;Interpretable+Models;Statistical+Simulation+and+Computing"
-    alt="Typing SVG: Keivan Bolouri's research interests"
-  />
-</p>
 
 <h3>🌱 Current Focus</h3>
 
