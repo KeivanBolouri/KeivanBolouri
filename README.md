@@ -156,9 +156,8 @@
   <br/>
   <img
     alt="Example contribution-grid animation by Platane"
-    src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg"
+    src="./assets/contribution-grid-snake.svg?v=fc53592"
     width="100%"
-    height="280"
   />
   <p>
     <small>
