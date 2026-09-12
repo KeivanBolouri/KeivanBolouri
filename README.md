@@ -49,6 +49,27 @@
 
 <hr/>
 
+<h2 align="center">🔬 Featured Research</h2>
+
+<p align="center">
+  <a href="https://github.com/KeivanBolouri/pattern-aware-sequential-mar">
+    <img
+      src="./assets/causal-inference-card.svg"
+      width="400"
+      alt="Causal Inference and Missing Data — view research code and simulations"
+    />
+  </a>
+  <a href="https://github.com/KeivanBolouri/federated-lasso">
+    <img
+      src="./assets/statistical-computing-card.svg"
+      width="400"
+      alt="Statistical Simulation and Computing — view the federated Lasso project"
+    />
+  </a>
+</p>
+
+<hr/>
+
 <h2 align="center">⚒️ Languages, Frameworks, and Tools ⚒️</h2>
 
 <div align="center">
@@ -86,7 +107,6 @@
       The fitted lines illustrate association, not a causal effect.
     </small>
   </p>
-  <p><em>😄 My code runs. Whether it converges is another question.</em></p>
 </div>
 
 <hr/>
@@ -126,4 +146,3 @@
   </a>
 
 </div>
-
