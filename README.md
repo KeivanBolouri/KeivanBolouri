@@ -150,9 +150,7 @@
 <hr/>
 
 <div align="center">
-  <p align="center">
-    <small>🐍 My contributions in the last year 🐍</small>
-  </p>
+  <h2>🐍 My contributions in the last year 🐍</h2>
   <br/>
   <img
     alt="Example contribution-grid animation by Platane"
