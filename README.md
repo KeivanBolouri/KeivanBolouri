@@ -93,24 +93,6 @@
 
 <hr/>
 
-<div align="center">
-  <h2>📊 A Little Statistical Curiosity</h2>
-  <p>What changes when some observations go missing?</p>
-  <img
-    src="./assets/missing-data-simulation.gif"
-    width="800"
-    alt="Animated simulated scatterplot showing how selectively missing observations change a fitted regression line."
-  />
-  <p>
-    <small>
-      A simulated example of how selective missingness can change an observed relationship.
-      The fitted lines illustrate association, not a causal effect.
-    </small>
-  </p>
-</div>
-
-<hr/>
-
 <h2>🤝 Let’s Connect</h2>
 
 <div style="display:flex; flex-wrap:wrap; justify-content:flex-start; gap:12px;">
