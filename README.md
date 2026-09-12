@@ -8,6 +8,24 @@
   />
 </h1>
 
+<div align="center">
+  <h2>📊 A Little Statistical Curiosity</h2>
+  <p>What changes when some observations go missing?</p>
+  <img
+    src="./assets/missing-data-simulation.gif"
+    width="800"
+    alt="Animated simulated scatterplot showing how selectively missing observations change a fitted regression line."
+  />
+  <p>
+    <small>
+      A simulated example of how selective missingness can change an observed relationship.
+      The fitted lines illustrate association, not a causal effect.
+    </small>
+  </p>
+</div>
+
+<hr/>
+
 <p align="center">
   <img
     src="https://readme-typing-svg.demolab.com?font=Righteous&amp;size=32&amp;center=true&amp;vCenter=true&amp;width=900&amp;height=80&amp;duration=3000&amp;pause=1000&amp;color=58A6FF&amp;lines=I'm+Keivan+Bolouri;I+am+interested+in;Causal+Inference;Missing+Data;Machine+Learning;Interpretable+Models;Statistical+Simulation+and+Computing"
@@ -49,27 +67,6 @@
 
 <hr/>
 
-<h2 align="center">🔬 Featured Research</h2>
-
-<p align="center">
-  <a href="https://github.com/KeivanBolouri/pattern-aware-sequential-mar">
-    <img
-      src="./assets/causal-inference-card.svg"
-      width="400"
-      alt="Causal Inference and Missing Data — view research code and simulations"
-    />
-  </a>
-  <a href="https://github.com/KeivanBolouri/federated-lasso">
-    <img
-      src="./assets/statistical-computing-card.svg"
-      width="400"
-      alt="Statistical Simulation and Computing — view the federated Lasso project"
-    />
-  </a>
-</p>
-
-<hr/>
-
 <h2 align="center">⚒️ Languages, Frameworks, and Tools ⚒️</h2>
 
 <div align="center">
@@ -90,6 +87,27 @@
   </p>
   <br/><br/><br/>
 </div>
+
+<hr/>
+
+<h2 align="center">🔬 Featured Research</h2>
+
+<p align="center">
+  <a href="https://github.com/KeivanBolouri/pattern-aware-sequential-mar">
+    <img
+      src="./assets/causal-inference-card.svg"
+      width="400"
+      alt="Causal Inference and Missing Data — view research code and simulations"
+    />
+  </a>
+  <a href="https://github.com/KeivanBolouri/federated-lasso">
+    <img
+      src="./assets/statistical-computing-card.svg"
+      width="400"
+      alt="Statistical Simulation and Computing — view the federated Lasso project"
+    />
+  </a>
+</p>
 
 <hr/>
 
