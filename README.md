@@ -15,6 +15,36 @@
   />
 </p>
 
+<h3>🌱 Current Focus</h3>
+
+<p>
+  I explore <code>causal inference</code> through <code>statistical simulation</code>
+  and <code>computational methods</code>, focusing on the challenges that
+  <code>missing data</code> create in <code>observational studies</code>.
+  I am also interested in <code>machine learning</code> and building <code>interpretable models</code>.
+</p>
+
+<h3>👯 Collaboration</h3>
+
+<p>
+  Open to collaborations in
+  <code>causal inference</code>,
+  <code>statistical simulations and computational methods</code>,
+  <code>statistical machine learning</code>,
+  and data-driven decision making for real-world applications.
+</p>
+
+<h3>💬 Methodological Expertise</h3>
+
+<p>
+  <code>Linear and generalized linear modeling</code>,
+  <code>optimization in statistics</code>,
+  <code>statistical computing</code>,
+  <code>machine learning algorithms</code>,
+  and
+  <code>statistical inference</code>.
+</p>
+
 <hr/>
 
 <div align="center">
@@ -74,40 +104,6 @@
   />
   <p><small>Gradient descent uses the slope of a loss function to move toward a minimum in this convex example.</small></p>
 </div>
-
-<hr/>
-
-<h3>🌱 Current Focus</h3>
-
-<p>
-  I explore <code>causal inference</code> through <code>statistical simulation</code>
-  and <code>computational methods</code>, focusing on the challenges that
-  <code>missing data</code> create in <code>observational studies</code>.
-  I am also interested in <code>machine learning</code> and building <code>interpretable models</code>.
-</p>
-
-<h3>👯 Collaboration</h3>
-
-<p>
-  Open to collaborations in
-  <code>causal inference</code>,
-  <code>statistical simulations and computational methods</code>,
-  <code>statistical machine learning</code>,
-  and data-driven decision making for real-world applications.
-</p>
-
-<h3>💬 Methodological Expertise</h3>
-
-<p>
-  <code>Linear and generalized linear modeling</code>,
-  <code>optimization in statistics</code>,
-  <code>statistical computing</code>,
-  <code>machine learning algorithms</code>,
-  and
-  <code>statistical inference</code>.
-</p>
-
-<br/>
 
 <hr/>
 
