@@ -58,11 +58,8 @@
   <p>
     <small>
       A simulated example of how selective missingness can change an observed relationship.
-      The fitted lines illustrate association, not a causal effect.
     </small>
   </p>
-
-  <p>Statistical ideas, illustrated with simple animations.</p>
 
   <h3>🎛️ How Lasso Selects Variables</h3>
   <img
