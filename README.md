@@ -150,7 +150,7 @@
 <hr/>
 
 <div align="center">
-  <h2>🐍 Contribution Animation 🐍</h2>
+  <h2>🐍 Contributions in the last year 🐍</h2>
   <br/>
   <img alt="Example contribution-grid animation by Platane" src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" />
   <p>
