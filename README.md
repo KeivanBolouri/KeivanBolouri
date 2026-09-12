@@ -62,7 +62,7 @@
     </small>
   </p>
 
-  <p>Five statistical ideas, illustrated with simple animations.</p>
+  <p>Statistical ideas, illustrated with simple animations.</p>
 
   <h3>🎛️ How Lasso Selects Variables</h3>
   <img
@@ -103,6 +103,38 @@
     alt="Gradient descent follows a path across a convex loss surface toward its minimum."
   />
   <p><small>Gradient descent uses the slope of a loss function to move toward a minimum in this convex example.</small></p>
+
+  <h3>🔎 Confounding and Adjustment</h3>
+  <img
+    src="./assets/confounding-adjustment.gif"
+    width="800"
+    alt="A simulated common cause distorts an unadjusted estimate; adjusting for it targets the known causal effect."
+  />
+  <p><small>A measured common cause can distort an unadjusted estimate. In this simulated model, including that variable targets the known causal effect.</small></p>
+
+  <h3>🔎 Observation versus Intervention</h3>
+  <img
+    src="./assets/observation-intervention.gif"
+    width="800"
+    alt="A causal diagram contrasts observing X equal to one with intervening to set X equal to one."
+  />
+  <p><small>Observing X = 1 selects a group. Setting X = 1 changes how X is assigned while leaving the other causal relationships intact.</small></p>
+
+  <h3>🔄 From Prior to Posterior</h3>
+  <img
+    src="./assets/bayesian-updating.gif"
+    width="800"
+    alt="A prior distribution for the probability of heads is updated as simulated coin flips arrive."
+  />
+  <p><small>A prior distribution is updated with observed coin flips to form a posterior distribution.</small></p>
+
+  <h3>🔄 Exploring a Posterior with MCMC</h3>
+  <img
+    src="./assets/mcmc-sampling.gif"
+    width="800"
+    alt="A Metropolis chain explores a posterior distribution while a histogram of correlated samples accumulates."
+  />
+  <p><small>An MCMC chain explores a posterior distribution, producing correlated samples that gradually build a histogram.</small></p>
 </div>
 
 <hr/>
