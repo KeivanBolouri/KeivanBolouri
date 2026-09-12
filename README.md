@@ -31,6 +31,48 @@
       The fitted lines illustrate association, not a causal effect.
     </small>
   </p>
+
+  <p>Five statistical ideas, illustrated with simple animations.</p>
+
+  <h3>🎛️ How Lasso Selects Variables</h3>
+  <img
+    src="./assets/lasso-coefficients.gif"
+    width="800"
+    alt="Animated Lasso coefficient paths showing coefficients becoming zero as the penalty increases."
+  />
+  <p><small>Increasing the Lasso penalty shrinks coefficient estimates and can set some to zero.</small></p>
+
+  <h3>🔄 How Bootstrap Sampling Works</h3>
+  <img
+    src="./assets/bootstrap-sampling.gif"
+    width="800"
+    alt="Repeated sampling with replacement from one fixed dataset builds a distribution of bootstrap means."
+  />
+  <p><small>Resampling the same observations with replacement builds a bootstrap distribution of the sample mean.</small></p>
+
+  <h3>🎯 What a Confidence Interval Means</h3>
+  <img
+    src="./assets/confidence-intervals.gif"
+    width="800"
+    alt="Confidence intervals from repeated samples, with intervals that miss the fixed population mean highlighted."
+  />
+  <p><small>Repeated samples produce different intervals. The display tracks how often they contain the fixed population mean.</small></p>
+
+  <h3>🌐 How Federated Learning Works</h3>
+  <img
+    src="./assets/federated-learning.gif"
+    width="800"
+    alt="Three sites fit local models and send model updates to a coordinator, which combines them and returns an updated model."
+  />
+  <p><small>Sites fit local models and share model updates with a coordinator for aggregation.</small></p>
+
+  <h3>📉 How Optimization Finds a Minimum</h3>
+  <img
+    src="./assets/gradient-descent.gif"
+    width="800"
+    alt="Gradient descent follows a path across a convex loss surface toward its minimum."
+  />
+  <p><small>Gradient descent uses the slope of a loss function to move toward a minimum in this convex example.</small></p>
 </div>
 
 <hr/>
