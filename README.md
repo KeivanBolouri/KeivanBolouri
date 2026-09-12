@@ -39,7 +39,9 @@
 <p>
   <code>Linear and generalized linear modeling</code>,
   <code>optimization in statistics</code>,
-  <code>statistical computing</code>,
+  <code>statistical simulations</code>,
+   <code>statistical computing</code>,
+  <code>causal inference</code>
   <code>machine learning algorithms</code>,
   and
   <code>statistical inference</code>.
