@@ -89,7 +89,7 @@
 
   <h3>🎲 Monte Carlo Integration</h3>
   <img
-    src="./assets/monte-carlo-integration.gif"
+    src="./assets/monte-carlo-integration.gif?v=2ceb015"
     width="800"
     alt="Green accepted and red rejected random points estimate a wavy integral; the running estimate is compared with a numerical reference."
   />
