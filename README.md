@@ -1,10 +1,6 @@
 <img src="https://hits.sh/github.com/KeivanBolouri/KeivanBolouri.svg?label=Visitors&color=0e75b6&labelColor=555555&extraCount=667" alt="Visitors" />
 <h1 align="center">
   Hi There!
-  <img
-    src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif"
-    width="40"
-  />
 </h1>
 
 <p align="center">
