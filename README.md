@@ -154,7 +154,11 @@
     <small>🐍 My contributions in the last year 🐍</small>
   </p>
   <br/>
-  <img alt="Example contribution-grid animation by Platane" src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" />
+  <img
+    alt="Example contribution-grid animation by Platane"
+    src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg"
+    width="800"
+  />
   <p>
     <small>
       Example animation from <a href="https://github.com/Platane/snk">Platane/snk</a>
