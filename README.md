@@ -150,12 +150,12 @@
 <hr/>
 
 <div align="center">
-  <h2 align="center" style="margin-bottom: 0.65em;">🐍 My contributions in the last year 🐍</h2>
+  <h2 align="center" style="margin-bottom: 0.9em;">🐍 My contributions in the last year 🐍</h2>
   <img
     alt="Example contribution-grid animation by Platane"
-    src="./assets/contribution-grid-snake.svg?v=e27977a"
+    src="./assets/contribution-grid-snake.svg?v=0da7126"
     width="100%"
-    style="display: block; margin-top: 0.35em;"
+    style="display: block; margin-top: 0.55em;"
   />
   <p>
     <small>
