@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="58" viewBox="0 0 740 58" role="img" aria-labelledby="title description">
+<title id="title">I am interested in causal inference, statistical simulation and computing, and machine learning.</title>
+<desc id="description">Each interest appears, pauses, disappears, and gives way to the next. Four seconds per term, repeating every sixteen seconds.</desc>
+<style>
+text{font-family:Consolas,"Liberation Mono",Menlo,monospace;font-size:22px;font-weight:500}
+.motion-free{display:none}
+@media(prefers-reduced-motion:reduce){.animated{display:none}.motion-free{display:inline}}
+</style>
+<defs><clipPath id="term-0"><rect x="0" y="0" width="0" height="58"><animate attributeName="width" dur="16s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.05;0.1875;0.23125;1" values="0;211.2;211.2;0;0"/></rect></clipPath><clipPath id="term-1"><rect x="0" y="0" width="0" height="58"><animate attributeName="width" dur="16s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.25;0.3;0.4375;0.48125;1" values="0;0;290.4;290.4;0;0"/></rect></clipPath><clipPath id="term-2"><rect x="0" y="0" width="0" height="58"><animate attributeName="width" dur="16s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.5;0.55;0.6875;0.73125;1" values="0;0;277.2;277.2;0;0"/></rect></clipPath><clipPath id="term-3"><rect x="0" y="0" width="0" height="58"><animate attributeName="width" dur="16s" repeatCount="indefinite" calcMode="linear" keyTimes="0;0.75;0.8;0.9375;0.98125;1" values="0;0;211.2;211.2;0;0"/></rect></clipPath></defs>
+<g class="animated" fill="#1f2328">
+<text x="99.4" y="36" textLength="250.8" lengthAdjust="spacingAndGlyphs" xml:space="preserve">I am interested in </text>
+<g transform="translate(350.2 0)" fill="#0969da"><text y="36" clip-path="url(#term-0)" textLength="211.2" lengthAdjust="spacingAndGlyphs">causal inference</text><text y="36" clip-path="url(#term-1)" textLength="290.4" lengthAdjust="spacingAndGlyphs">statistical simulation</text><text y="36" clip-path="url(#term-2)" textLength="277.2" lengthAdjust="spacingAndGlyphs">statistical computing</text><text y="36" clip-path="url(#term-3)" textLength="211.2" lengthAdjust="spacingAndGlyphs">machine learning</text></g>
+</g>
+<g class="motion-free" fill="#1f2328" text-anchor="middle">
+<text x="370" y="23" style="font-size:17px">I am interested in causal inference, statistical simulation,</text>
+<text x="370" y="47" style="font-size:17px">statistical computing, and machine learning.</text>
+</g>
+</svg>
