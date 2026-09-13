@@ -3,11 +3,10 @@
 <h1 align="center">Hi There!</h1>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/interests-typing-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/interests-typing-light.svg">
-    <img src="assets/interests-typing-light.svg" width="740" height="58" alt="I am interested in causal inference, statistical simulation and computing, and machine learning.">
-  </picture>
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Righteous&amp;size=32&amp;center=true&amp;vCenter=true&amp;width=900&amp;height=80&amp;duration=3000&amp;pause=1000&amp;color=58A6FF&amp;lines=I+am+interested+in;Causal+Inference;Missing+Data;Machine+Learning;Interpretable+Models;Statistical+Simulation+and+Computing"
+    alt="Typing SVG: I am interested in causal inference, missing data, machine learning, interpretable models, and statistical simulation and computing."
+  />
 </p>
 
 <p align="center">Statistics · Data science · Causal inference</p>
