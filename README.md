@@ -2,6 +2,8 @@
 
 <h1 align="center">Hi, I'm Keivan Bolouri.</h1>
 
+<p align="center">I am interested in causal inference, statistical simulation and computing, and machine learning.</p>
+
 <p align="center">Statistics · Data science · Causal inference</p>
 
 <p align="center">
