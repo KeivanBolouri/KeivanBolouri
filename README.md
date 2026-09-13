@@ -41,12 +41,16 @@
 <section id="animations">
 <h2>📊 A Little Statistical Curiosity</h2>
 <p>Explore statistical ideas through simulation. Each animation opens a working experiment.</p>
+<a href="https://keivanbolouri.netlify.app/profile.html#showcase"><img width="800" height="640" loading="lazy" src="assets/experiments-showcase.gif" alt="Eleven statistical experiments rotate every five seconds: Lasso, Monte Carlo integration, missing data, bootstrap sampling, confidence intervals, federated learning, gradient descent, confounding, intervention, Bayesian updating, and MCMC. Click to open the interactive controls."></a>
+<p>All 11 experiments, changing every 5 seconds.</p>
+<p><a href="https://keivanbolouri.netlify.app/profile.html#showcase">▶ Open the interactive showcase</a> to pause, choose an experiment, or use Previous/Next.</p>
+<details>
+<summary><strong>Choose from all 11 statistical experiments</strong></summary>
+
 <h3><a href="https://keivanbolouri.netlify.app/profile.html#demo/monte-carlo-integration">Monte Carlo Integration</a></h3>
 <a href="https://keivanbolouri.netlify.app/profile.html#demo/monte-carlo-integration"><img width="880" loading="lazy" src="assets/monte-carlo-card.gif" alt="Animated statistical illustration: Random points estimate the area under x² on [0, 1]. More samples tend to improve precision, although the error can rise or fall."></a>
 <p>Random points estimate the area under x² on [0, 1]. More samples tend to improve precision, although the error can rise or fall.</p>
 <p><a href="https://keivanbolouri.netlify.app/profile.html#demo/monte-carlo-integration">▶ Open the interactive experiment</a></p>
-<details>
-<summary><strong>Explore 10 more statistical animations</strong></summary>
 
 <h3><a href="https://keivanbolouri.netlify.app/profile.html#demo/missing-data-simulation">What changes when observations go missing?</a></h3>
 <a href="https://keivanbolouri.netlify.app/profile.html#demo/missing-data-simulation"><img width="880" loading="lazy" src="assets/missing-data-simulation.gif" alt="Animated statistical illustration: See how selectively missing observations can change a fitted association. The interactive example compares random and outcome-related missingness."></a>
