@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - scripts/build-experiment-showcase.py
+      - scripts/statistical_cards.py
       - .github/workflows/build-experiment-showcase.yml
 
 permissions:
@@ -33,21 +34,21 @@ jobs:
 
       - name: Install image tools
         run: |
-          python -m pip install Pillow==12.3.0
+          python -m pip install Pillow==12.3.0 numpy==2.3.5 matplotlib==3.10.8
           sudo apt-get update -qq
           sudo apt-get install -y fonts-dejavu-core
 
-      - name: Build and validate the 55-second animation
+      - name: Build and validate all eleven dark cards and the 66-second animation
         run: python scripts/build-experiment-showcase.py
 
       - name: Publish the generated animation
         run: |
-          git add -- assets/experiments-showcase.gif
+          git add -- assets/experiments-showcase.gif assets/lasso-coefficients.gif assets/monte-carlo-card.gif assets/missing-data-simulation.gif assets/bootstrap-sampling.gif assets/confidence-intervals.gif assets/federated-learning.gif assets/gradient-descent.gif assets/confounding-adjustment.gif assets/observation-intervention.gif assets/bayesian-updating.gif assets/mcmc-sampling.gif
           if git diff --cached --quiet; then
             echo "The animation is already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Publish all 11 experiments in a five-second-per-experiment loop"
+          git commit -m "Publish eleven matching dark experiment cards with six seconds each"
           git push origin HEAD:main

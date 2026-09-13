@@ -1,151 +1,97 @@
 #!/usr/bin/env python3
-"""Package existing scientific GIFs into one GitHub-compatible 55-second loop.
+"""Build eleven matching dark scientific cards and their 66-second showcase.
 
-Run from any directory. Source labels and chart data are preserved: every source
-is sampled across its full duration, uniformly resized, and letterboxed. The
-output has 20 frames per experiment at 250 ms each, so every experiment receives
-exactly 5 seconds. A progress bar keeps otherwise identical frames distinct.
+Each experiment has 24 frames at 250 ms: exactly six seconds. All cards use
+the supplied Monte Carlo reference layout, without a second outer frame.
+Run with --preview-only to inspect one representative frame per experiment.
 """
 from __future__ import annotations
-
+import argparse
 import hashlib
 import json
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image
+from statistical_cards import (WIDTH, HEIGHT, FRAME_MS, FRAMES_PER_EXPERIMENT,
+                               EXPERIMENTS, NAVY, render)
 
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'assets'
+PREVIEW = ROOT / 'preview'
 OUTPUT = ASSETS / 'experiments-showcase.gif'
-PREVIEW = ROOT / 'preview' / 'experiments-showcase-contact-sheet.png'
-WIDTH, HEIGHT = 800, 640
-FRAME_MS, FRAMES_PER_EXPERIMENT = 250, 20
-BACKGROUND = '#12243b'
-TEXT = '#eef3fb'
-MUTED = '#b6c6d9'
-ACCENT = '#86e1d5'
-EXPERIMENTS = [
-    ('lasso-coefficients.gif', 'Lasso variable selection'),
-    ('monte-carlo-card.gif', 'Monte Carlo integration'),
-    ('missing-data-simulation.gif', 'Missing observations'),
-    ('bootstrap-sampling.gif', 'Bootstrap sampling'),
-    ('confidence-intervals.gif', 'Confidence intervals'),
-    ('federated-learning.gif', 'Federated learning'),
-    ('gradient-descent.gif', 'Gradient descent'),
-    ('confounding-adjustment.gif', 'Confounding and adjustment'),
-    ('observation-intervention.gif', 'Observation vs. intervention'),
-    ('bayesian-updating.gif', 'Bayesian updating'),
-    ('mcmc-sampling.gif', 'MCMC sampling'),
-]
 
 
-def font(size: int, bold: bool = False):
-    filename = 'DejaVuSans-Bold.ttf' if bold else 'DejaVuSans.ttf'
-    path = Path('/usr/share/fonts/truetype/dejavu') / filename
-    return ImageFont.truetype(str(path) if path.exists() else filename, size)
-
-
-def source_frames(path: Path):
-    """Decode composited source frames with their actual presentation times."""
-    frames, cumulative, total = [], [], 0
+def verify(path, experiments=1):
+    durations = []
     with Image.open(path) as image:
-        for index in range(image.n_frames):
-            image.seek(index)
-            frames.append(image.convert('RGB'))
-            total += int(image.info.get('duration', 100))
-            cumulative.append(total)
-    return frames, cumulative, total
+        assert image.size == (WIDTH, HEIGHT)
+        assert image.info.get('loop') == 0
+        assert image.n_frames == FRAMES_PER_EXPERIMENT * experiments
+        for i in range(image.n_frames):
+            image.seek(i)
+            durations.append(image.info['duration'])
+    assert all(t == FRAME_MS for t in durations)
+    sections = [sum(durations[i:i+FRAMES_PER_EXPERIMENT])
+                for i in range(0, len(durations), FRAMES_PER_EXPERIMENT)]
+    assert sections == [6000] * experiments
+    data = path.read_bytes()
+    return {'file': path.name, 'bytes': len(data), 'frames': len(durations),
+            'dimensions': [WIDTH, HEIGHT], 'loop': 0,
+            'each_experiment_ms': 6000, 'total_duration_ms': sum(durations),
+            'sha256': hashlib.sha256(data).hexdigest(),
+            'git_blob_sha': hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()}
 
 
-def create_frame(source: Image.Image, experiment: int, frame: int) -> Image.Image:
-    canvas = Image.new('RGB', (WIDTH, HEIGHT), BACKGROUND)
-    draw = ImageDraw.Draw(canvas)
-    draw.text((22, 12), 'STATISTICAL EXPERIMENTS', font=font(11, True), fill=ACCENT)
-    draw.text((WIDTH - 24, 18), f'{experiment + 1} / {len(EXPERIMENTS)}',
-              font=font(15, True), fill=MUTED, anchor='ra')
-    draw.text((22, 32), EXPERIMENTS[experiment][1], font=font(23, True), fill=TEXT)
-    # Uniform scaling only. Full source including every label remains visible.
-    fitted = ImageOps.contain(source, (768, 536), Image.Resampling.LANCZOS)
-    x = (WIDTH - fitted.width) // 2
-    y = 68 + (536 - fitted.height) // 2
-    canvas.paste(fitted, (x, y))
-    draw.text((22, 614), 'Changes every 5 seconds · Click to explore',
-              font=font(12), fill=MUTED)
-    for number in range(len(EXPERIMENTS)):
-        cx = 650 + number * 12
-        draw.ellipse((cx, 618, cx + 5, 623),
-                     fill=ACCENT if number == experiment else '#496078')
-    # Fill is tied to presentation frames, not a browser or server timer.
-    draw.rectangle((0, HEIGHT - 3, WIDTH, HEIGHT - 1), fill='#263e56')
-    progress = round(WIDTH * (frame + 1) / FRAMES_PER_EXPERIMENT)
-    draw.rectangle((0, HEIGHT - 3, progress - 1, HEIGHT - 1), fill=ACCENT)
-    return canvas
+def encode(frames):
+    # A fixed, full-resolution palette for each experiment preserves thin curves.
+    sheet = Image.new('RGB', (WIDTH * 6, HEIGHT * 4), NAVY)
+    for k, frame in enumerate(frames):
+        sheet.paste(frame, ((k % 6) * WIDTH, (k // 6) * HEIGHT))
+    palette = sheet.quantize(colors=256, method=Image.Quantize.MEDIANCUT,
+                             dither=Image.Dither.NONE)
+    return [frame.quantize(palette=palette, dither=Image.Dither.NONE) for frame in frames]
+
+
+def save(frames, path):
+    frames[0].save(path, save_all=True, append_images=frames[1:],
+                   duration=FRAME_MS, loop=0, optimize=True, disposal=1)
 
 
 def main():
-    output_frames = []
-    source_report = []
-    for experiment, (filename, title) in enumerate(EXPERIMENTS):
-        originals, ends, duration = source_frames(ASSETS / filename)
-        selected = []
-        for frame in range(FRAMES_PER_EXPERIMENT):
-            # Include both the first and final source frames; interior samples
-            # follow the original animation's presentation timing.
-            sample_ms = (duration - 1) * frame / (FRAMES_PER_EXPERIMENT - 1)
-            source_index = next(i for i, end in enumerate(ends) if end > sample_ms)
-            selected.append(source_index)
-            packaged = create_frame(originals[source_index], experiment, frame)
-            output_frames.append(packaged)
-        source_report.append({'title': title, 'source': filename,
-                              'source_duration_ms': duration,
-                              'sampled_frames': selected})
-
-    # A stable palette for each experiment preserves its original chart colors.
-    # Full-resolution samples matter: thumbnail-only palettes can average thin
-    # colored coefficient paths into gray. No dithering or per-frame palettes.
-    quantized = []
-    for experiment in range(len(EXPERIMENTS)):
-        experiment_frames = output_frames[
-            experiment * FRAMES_PER_EXPERIMENT:(experiment + 1) * FRAMES_PER_EXPERIMENT]
-        palette_sheet = Image.new('RGB', (WIDTH * 5, HEIGHT * 4))
-        for index, frame in enumerate(experiment_frames):
-            palette_sheet.paste(frame, ((index % 5) * WIDTH, (index // 5) * HEIGHT))
-        palette = palette_sheet.quantize(colors=256, method=Image.Quantize.MEDIANCUT,
-                                        dither=Image.Dither.NONE)
-        quantized.extend(frame.quantize(palette=palette, dither=Image.Dither.NONE)
-                         for frame in experiment_frames)
-    quantized[0].save(OUTPUT, save_all=True, append_images=quantized[1:],
-                      duration=FRAME_MS, loop=0, optimize=True, disposal=1)
-
-    PREVIEW.parent.mkdir(exist_ok=True)
-    sheet = Image.new('RGB', (WIDTH * 3, HEIGHT * 4), '#e7ecf2')
-    with Image.open(OUTPUT) as encoded:
-        for index in range(len(EXPERIMENTS)):
-            encoded.seek(index * FRAMES_PER_EXPERIMENT + FRAMES_PER_EXPERIMENT // 2)
-            sheet.paste(encoded.convert('RGB'), ((index % 3) * WIDTH, (index // 3) * HEIGHT))
-    sheet.save(PREVIEW)
-
-    with Image.open(OUTPUT) as result:
-        durations = []
-        for index in range(result.n_frames):
-            result.seek(index)
-            durations.append(result.info['duration'])
-        assert result.n_frames == 11 * FRAMES_PER_EXPERIMENT, result.n_frames
-        assert all(duration == FRAME_MS for duration in durations), durations
-        assert result.info.get('loop') == 0
-        assert result.size == (WIDTH, HEIGHT)
-        assert sum(durations) == 55000
-        for experiment in range(11):
-            section = durations[experiment * 20:(experiment + 1) * 20]
-            assert sum(section) == 5000
-    report = {'output': str(OUTPUT), 'bytes': OUTPUT.stat().st_size,
-              'sha256': hashlib.sha256(OUTPUT.read_bytes()).hexdigest(),
-              'frames': len(durations), 'frame_duration_ms': FRAME_MS,
-              'each_experiment_ms': 5000, 'total_duration_ms': sum(durations),
-              'loop': 0, 'dimensions': [WIDTH, HEIGHT], 'sources': source_report,
-              'contact_sheet': str(PREVIEW)}
-    report_path = PREVIEW.with_suffix('.json')
-    report_path.write_text(json.dumps(report, indent=2) + '\n')
-    print(json.dumps({key: value for key, value in report.items() if key != 'sources'}, indent=2))
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--preview-only', action='store_true')
+    preview_only = parser.parse_args().preview_only
+    PREVIEW.mkdir(exist_ok=True)
+    ASSETS.mkdir(exist_ok=True)
+    contact = Image.new('RGB', (WIDTH * 3, HEIGHT * 4), NAVY)
+    all_frames, reports = [], []
+    for index, (stem, title) in enumerate(EXPERIMENTS):
+        if preview_only:
+            frame = render(index, FRAMES_PER_EXPERIMENT // 2)
+            contact.paste(frame, ((index % 3) * WIDTH, (index // 3) * HEIGHT))
+            continue
+        frames = [render(index, k) for k in range(FRAMES_PER_EXPERIMENT)]
+        encoded = encode(frames)
+        card_path = ASSETS / (stem + '.gif')
+        save(encoded, card_path)
+        reports.append(verify(card_path))
+        all_frames.extend(encoded)
+        contact.paste(encoded[FRAMES_PER_EXPERIMENT // 2].convert('RGB'),
+                      ((index % 3) * WIDTH, (index // 3) * HEIGHT))
+        sample = Image.new('RGB', (WIDTH * 3, HEIGHT), NAVY)
+        for j, k in enumerate([0, FRAMES_PER_EXPERIMENT // 2, FRAMES_PER_EXPERIMENT - 1]):
+            sample.paste(encoded[k].convert('RGB'), (j * WIDTH, 0))
+        sample.save(PREVIEW / (stem + '-dark-review.png'))
+        print(f'Validated {index+1}/11: {title} — 6 seconds', flush=True)
+    contact.save(PREVIEW / 'experiments-showcase-contact-sheet.png')
+    if preview_only:
+        print('All eleven reference-style previews rendered without clipped card text.')
+        return
+    save(all_frames, OUTPUT)
+    report = verify(OUTPUT, len(EXPERIMENTS))
+    report['cards'] = reports
+    report['style'] = 'Dark reference card: navy background, serif title, chart, three result boxes'
+    (PREVIEW / 'experiments-showcase-contact-sheet.json').write_text(json.dumps(report, indent=2) + '\n')
+    print(json.dumps({k: v for k, v in report.items() if k != 'cards'}, indent=2))
 
 
 if __name__ == '__main__':
