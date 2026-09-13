@@ -1,0 +1,53 @@
+name: Build experiment showcase
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/build-experiment-showcase.py
+      - .github/workflows/build-experiment-showcase.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-experiment-showcase
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.repository == 'KeivanBolouri/KeivanBolouri' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out the profile
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+
+      - name: Install image tools
+        run: |
+          python -m pip install Pillow==12.3.0
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-dejavu-core
+
+      - name: Build and validate the 55-second animation
+        run: python scripts/build-experiment-showcase.py
+
+      - name: Publish the generated animation
+        run: |
+          git add -- assets/experiments-showcase.gif
+          if git diff --cached --quiet; then
+            echo "The animation is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Publish all 11 experiments in a five-second-per-experiment loop"
+          git push origin HEAD:main
