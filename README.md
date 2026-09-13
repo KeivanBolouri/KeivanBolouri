@@ -1,143 +1,80 @@
 <img src="https://hits.sh/github.com/KeivanBolouri/KeivanBolouri.svg?label=Visitors&color=0e75b6&labelColor=555555&extraCount=667" alt="Visitors" />
-<h1 align="center">
-  Hi There!
-</h1>
 
-<p align="center">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Righteous&amp;size=32&amp;center=true&amp;vCenter=true&amp;width=900&amp;height=80&amp;duration=3000&amp;pause=1000&amp;color=58A6FF&amp;lines=I'm+Keivan+Bolouri;I+am+interested+in;Causal+Inference;Missing+Data;Machine+Learning;Interpretable+Models;Statistical+Simulation+and+Computing"
-    alt="Typing SVG: Keivan Bolouri's research interests"
-  />
-</p>
+<h1 align="center">Hi, I'm Keivan Bolouri.</h1>
 
-<h3>🌱 Current Focus</h3>
+<p align="center">Statistics · Data science · Causal inference</p>
 
-<p>
-  I explore <code>causal inference</code> through <code>statistical simulation</code>
-  and <code>computational methods</code>, focusing on the challenges that
-  <code>missing data</code> create in <code>observational studies</code>.
-  I am also interested in <code>machine learning</code> and building <code>interpretable models</code>.
-</p>
+<h3>🔎 Research Focus</h3>
 
-<h3>👯 Collaboration</h3>
+<p>I study <code>causal inference</code> through <code>statistical simulation</code> and <code>computational methods</code>, particularly how <code>missing data</code> affect conclusions from <code>observational studies</code>. My interests also include <code>machine learning</code> and <code>interpretable models</code>.</p>
 
-<p>
-  Open to collaborations in
-  <code>causal inference</code>,
-  <code>statistical simulations and computational methods</code>,
-  <code>statistical machine learning</code>,
-  and data-driven decision making for real-world applications.
-</p>
+<h3>🤝 Collaboration</h3>
 
-<h3>💬 Methodological Expertise</h3>
+<p>Open to collaborations in causal inference, missing-data methods, statistical simulation, and interpretable machine learning.</p>
 
-<p>
-  <code>Linear and generalized linear modeling</code>,
-  <code>optimization in statistics</code>,
-  <code>statistical simulations</code>,
-   <code>statistical computing</code>,
-  <code>causal inference</code>,
-  <code>machine learning algorithms</code>,
-  and
-  <code>statistical inference</code>.
-</p>
+<h3>⚙️ Methods &amp; Computing</h3>
+
+<ul>
+  <li><strong>Statistical methods:</strong> linear and generalized linear models, resampling, regularization, and statistical inference.</li>
+  <li><strong>Computation:</strong> Monte Carlo simulation, numerical optimization, and reproducible workflows.</li>
+  <li><strong>Tools:</strong> R, Python, C++, and LaTeX.</li>
+</ul>
 
 <hr/>
 
-<div align="center">
-  <h2>📊 A Little Statistical Curiosity</h2>
-  <p>What changes when some observations go missing?</p>
-  <img
-    src="./assets/missing-data-simulation.gif"
-    width="800"
-    alt="Animated simulated scatterplot showing how selectively missing observations change a fitted regression line."
-  />
-  <p>
-    <small>
-      A simulated example of how selective missingness can change an observed relationship.
-    </small>
-  </p>
+<section id="animations">
+<h2>📊 A Little Statistical Curiosity</h2>
+<p>Explore statistical ideas through simulation. Each animation opens a working experiment.</p>
+<h3>Monte Carlo Integration</h3>
+<a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/monte-carlo-integration"><img width="880" loading="lazy" src="assets/monte-carlo-card.gif" alt="Animated statistical illustration: Random points estimate the area under x² on [0, 1]. More samples tend to improve precision, although the error can rise or fall."></a>
+<p>Random points estimate the area under x² on [0, 1]. More samples tend to improve precision, although the error can rise or fall.</p>
+<p><a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/monte-carlo-integration">▶ Open the interactive experiment</a></p>
+<details>
+<summary><strong>Explore 10 more statistical animations</strong></summary>
 
-  <h3>🎛️ How Lasso Selects Variables</h3>
-  <img
-    src="./assets/lasso-coefficients.gif"
-    width="800"
-    alt="Animated Lasso coefficient paths showing coefficients becoming zero as the penalty increases."
-  />
-  <p><small>Increasing the Lasso penalty shrinks coefficient estimates and can set some to zero.</small></p>
+<h3>What changes when observations go missing?</h3>
+<a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/missing-data-simulation"><img width="880" loading="lazy" src="assets/missing-data-simulation.gif" alt="Animated statistical illustration: See how selectively missing observations can change a fitted association. The interactive example compares random and outcome-related missingness."></a>
+<p>See how selectively missing observations can change a fitted association. The interactive example compares random and outcome-related missingness.</p>
+<p><a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/missing-data-simulation">▶ Open the interactive experiment</a></p>
+<h3>How Lasso selects variables</h3>
+<a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/lasso-coefficients"><img width="880" loading="lazy" src="assets/lasso-coefficients.gif" alt="Animated statistical illustration: Increase the penalty and watch coefficients shrink to zero in an orthogonal-design example."></a>
+<p>Increase the penalty and watch coefficients shrink to zero in an orthogonal-design example.</p>
+<p><a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/lasso-coefficients">▶ Open the interactive experiment</a></p>
+<h3>How bootstrap sampling works</h3>
+<a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/bootstrap-sampling"><img width="880" loading="lazy" src="assets/bootstrap-sampling.gif" alt="Animated statistical illustration: Draw samples with replacement from a fixed dataset and build a distribution of sample means."></a>
+<p>Draw samples with replacement from a fixed dataset and build a distribution of sample means.</p>
+<p><a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/bootstrap-sampling">▶ Open the interactive experiment</a></p>
+<h3>What a confidence interval means</h3>
+<a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/confidence-intervals"><img width="880" loading="lazy" src="assets/confidence-intervals.gif" alt="Animated statistical illustration: Generate repeated samples and count how often their intervals contain the fixed population mean."></a>
+<p>Generate repeated samples and count how often their intervals contain the fixed population mean.</p>
+<p><a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/confidence-intervals">▶ Open the interactive experiment</a></p>
+<h3>How federated learning works</h3>
+<a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/federated-learning"><img width="880" loading="lazy" src="assets/federated-learning.gif" alt="Animated statistical illustration: Follow local model updates as three sites communicate with a coordinator and combine their results."></a>
+<p>Follow local model updates as three sites communicate with a coordinator and combine their results.</p>
+<p><a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/federated-learning">▶ Open the interactive experiment</a></p>
+<h3>How optimization finds a minimum</h3>
+<a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/gradient-descent"><img width="880" loading="lazy" src="assets/gradient-descent.gif" alt="Animated statistical illustration: Change the learning rate and follow gradient descent across a convex loss surface."></a>
+<p>Change the learning rate and follow gradient descent across a convex loss surface.</p>
+<p><a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/gradient-descent">▶ Open the interactive experiment</a></p>
+<h3>Confounding and adjustment</h3>
+<a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/confounding-adjustment"><img width="880" loading="lazy" src="assets/confounding-adjustment.gif" alt="Animated statistical illustration: Compare an unadjusted slope with an adjusted slope in a simulated model with a measured common cause."></a>
+<p>Compare an unadjusted slope with an adjusted slope in a simulated model with a measured common cause.</p>
+<p><a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/confounding-adjustment">▶ Open the interactive experiment</a></p>
+<h3>Observation versus intervention</h3>
+<a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/observation-intervention"><img width="880" loading="lazy" src="assets/observation-intervention.gif" alt="Animated statistical illustration: Compare observing a variable with intervening to set its value in a simple causal model."></a>
+<p>Compare observing a variable with intervening to set its value in a simple causal model.</p>
+<p><a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/observation-intervention">▶ Open the interactive experiment</a></p>
+<h3>From prior to posterior</h3>
+<a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/bayesian-updating"><img width="880" loading="lazy" src="assets/bayesian-updating.gif" alt="Animated statistical illustration: Update a prior distribution as simulated coin flips arrive and see how the posterior changes."></a>
+<p>Update a prior distribution as simulated coin flips arrive and see how the posterior changes.</p>
+<p><a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/bayesian-updating">▶ Open the interactive experiment</a></p>
+<h3>Exploring a posterior with MCMC</h3>
+<a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/mcmc-sampling"><img width="880" loading="lazy" src="assets/mcmc-sampling.gif" alt="Animated statistical illustration: Change the proposal scale and watch a Metropolis chain explore a target posterior distribution."></a>
+<p>Change the proposal scale and watch a Metropolis chain explore a target posterior distribution.</p>
+<p><a href="https://keivanbolouri.netlify.app/statistics-playground.html#demo/mcmc-sampling">▶ Open the interactive experiment</a></p>
 
-  <h3>🔄 How Bootstrap Sampling Works</h3>
-  <img
-    src="./assets/bootstrap-sampling.gif"
-    width="800"
-    alt="Repeated sampling with replacement from one fixed dataset builds a distribution of bootstrap means."
-  />
-  <p><small>Resampling the same observations with replacement builds a bootstrap distribution of the sample mean.</small></p>
-
-  <h3>🎯 What a Confidence Interval Means</h3>
-  <img
-    src="./assets/confidence-intervals.gif"
-    width="800"
-    alt="Confidence intervals from repeated samples, with intervals that miss the fixed population mean highlighted."
-  />
-  <p><small>Repeated samples produce different intervals. The display tracks how often they contain the fixed population mean.</small></p>
-
-  <h3>🎲 Monte Carlo Integration</h3>
-  <img
-    src="./assets/monte-carlo-integration.gif?v=3eda4b6"
-    width="800"
-    alt="Green accepted and red rejected random points estimate a wavy integral; the running estimate is compared with a numerical reference."
-  />
-  <p><small>Green accepted and red rejected points estimate the area under e<sup>−x²</sup>[1 + sin²(5x)] on [0, 3]. The estimate is six times the accepted fraction.</small></p>
-
-  <h3>🌐 How Federated Learning Works</h3>
-  <img
-    src="./assets/federated-learning.gif"
-    width="800"
-    alt="Three sites fit local models and send model updates to a coordinator, which combines them and returns an updated model."
-  />
-  <p><small>Sites fit local models and share model updates with a coordinator for aggregation.</small></p>
-
-  <h3>📉 How Optimization Finds a Minimum</h3>
-  <img
-    src="./assets/gradient-descent.gif"
-    width="800"
-    alt="Gradient descent follows a path across a convex loss surface toward its minimum."
-  />
-  <p><small>Gradient descent uses the slope of a loss function to move toward a minimum in this convex example.</small></p>
-
-  <h3>🔎 Confounding and Adjustment</h3>
-  <img
-    src="./assets/confounding-adjustment.gif"
-    width="800"
-    alt="A simulated common cause distorts an unadjusted estimate; adjusting for it targets the known causal effect."
-  />
-  <p><small>A measured common cause can distort an unadjusted estimate. In this simulated model, including that variable targets the known causal effect.</small></p>
-
-  <h3>🔎 Observation versus Intervention</h3>
-  <img
-    src="./assets/observation-intervention.gif"
-    width="800"
-    alt="A causal diagram contrasts observing X equal to one with intervening to set X equal to one."
-  />
-  <p><small>Observing X = 1 selects a group. Setting X = 1 changes how X is assigned while leaving the other causal relationships intact.</small></p>
-
-  <h3>🔄 From Prior to Posterior</h3>
-  <img
-    src="./assets/bayesian-updating.gif"
-    width="800"
-    alt="A prior distribution for the probability of heads is updated as simulated coin flips arrive."
-  />
-  <p><small>A prior distribution is updated with observed coin flips to form a posterior distribution.</small></p>
-
-  <h3>🔄 Exploring a Posterior with MCMC</h3>
-  <img
-    src="./assets/mcmc-sampling.gif"
-    width="800"
-    alt="A Metropolis chain explores a posterior distribution while a histogram of correlated samples accumulates."
-  />
-  <p><small>An MCMC chain explores a posterior distribution, producing correlated samples that gradually build a histogram.</small></p>
-</div>
+</details>
+</section>
 
 <hr/>
 
@@ -225,3 +162,4 @@
   </a>
 
 </div>
+
